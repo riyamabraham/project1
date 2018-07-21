@@ -1,0 +1,15 @@
+# use bootstrap framework
+# create a website so that
+    * u can search for foodreceipe
+    *search for hotel
+    *subscribe for a newsletter
+    
+
+    https://wireframe.cc/WmFfQU
+
+    https://wireframe.cc/htfiRo
+
+*use google maps api
+*use paces api to get hotels
+*bonus
+  #use weather api 
