@@ -130,3 +130,15 @@ row.myclass{
       color:purple;
       text-align: center;
   }
+
+
+  @media only screen and (max-device-width: 480px) {
+
+    row.myclass{
+        width:auto;
+        float: left;
+        background-color: white;
+        margin: 20px;
+        opacity: 0.75;
+    }
+}
