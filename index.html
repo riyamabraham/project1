@@ -69,6 +69,39 @@
 
 <div class="section2" id="foodsearch">
 
+        <div class="container">
+                <div class="row">
+                    
+                    <div class="input-field col s6">
+                       <select id="listsearch">
+                           <option value="breakfast">Breakfast</option>
+                           <option value="lunch">Lunch</option>
+                           <option value="dinner">Dinner</option>
+                           <option value="drinks">Drinks</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-field col s6">
+                            <select id="diet">
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                <option value="drinks">Drinks</option>
+     
+                             </select>
+     
+                     </div>
+                </div>
+    
+                       <input id="foodsearchsubmit" type="submit" value="submit">
+                        
+                   
+                   
+                </div>
+            </div>
+
 </div>
 
 
@@ -77,11 +110,35 @@
 </div>
 
 <div class="section4" id="restaurentsearch">
-    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <div class="row">
+        <div class="col s6">
+                <input type="text" id = "foodyousearchfor" placeholder="Your craving" name="food">
+        </div>
+        <div class="col s6">
+                <input type="text" id="zip" placeholder="Your zip/ location" name="location">
+        </div>
+   </div>
+
+   <div class="row">
+       <div class="col s5"></div>
+       <div class="col s2">
+           <input type="submit" id="restaurentsubmit" value="SEARCH">
+       </div>
+       <div class="col s5"></div>
+   </div>
+
+   <div class="row">
+       <div class="searchresults">
+           <h1 class="here">Search here for your craving</h1>
+       </div>
+   </div>
+   
 </div>
     
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <footer>
             <div class="footer-copyright">
@@ -94,6 +151,7 @@
 
 
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/search.js"></script>
     
 </body>
 </html>
