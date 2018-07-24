@@ -41,7 +41,7 @@ footer{
     font-family: cursive;
 }
 
-#list,#listsearch,#zip,#foodyousearchfor{
+#zip,#foodyousearchfor{
     color: white;
     display: grid;
     background-color: rgb(116, 111, 111);
@@ -51,14 +51,14 @@ footer{
 #foodsearch{
     background-image: url("../images/search.jpg");
     top:750px;
-    height: 750px;
+    height: 1200px;
     width: 100%;
 }
 
 #recipesearch{
     background-image: url("../images/bg.jpg");
     top:750px;
-    height: 750px;
+    height: 1200px;
     width: 100%;
     background-size: cover;                    
     background-position: center center;
@@ -67,7 +67,7 @@ footer{
 
 #restaurentsearch{
     background-image: url("../images/rest.jpg");
-    top:750px;
+    top:1200px;
     height: 750px;
     width: 100%;
     background-size: cover;                    
@@ -79,7 +79,7 @@ footer{
 
 /*for restaurent search*/
 
-#restaurentsubmit{
+#restaurentsubmit,#foodsearchsubmit,#recipesubmit{
     color: white;
     display: grid;
     background-color: rgb(56, 148, 20);
@@ -131,6 +131,19 @@ row.myclass{
       text-align: center;
   }
 
+  /*intro page*/
+  .input-field.col label{
+      font-size: 20px;
+      color: rgb(0, 174, 255);
+  }
+  .select-wrapper input.select-dropdown{
+      background-color: rgb(204, 185, 76);
+      opacity: 0.75;
+  }
+  /*serach page*/
+
+   
+
 
   @media only screen and (max-device-width: 600px) {
 
@@ -141,4 +154,25 @@ row.myclass{
         margin: 20px;
         opacity: 0.75;
     }
+}
+
+
+
+.detailsclass{
+    background-color: rgb(131, 121, 121);
+   
+    width:75%;
+    padding: 20px;
+    margin: auto;
+    border-color: black;
+    text-align: center;
+    
+}
+img.detailsclass{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   width: 50%;
 }

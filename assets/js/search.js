@@ -25,7 +25,7 @@ $(document).on("click", "#restaurentsubmit", function (e) {
     event.preventDefault();
 
   // Create the Query here by grabbing the place and food from the page
-  var queryURL = "https://api.yelp.com/v3/businesses/search?term=" + food + "&location=" + zip + "&price=1" + "&limit=20" +"&radius=20000";
+  var queryURL = "https://api.yelp.com/v3/businesses/search?term=" + food + "&location=" + zip + "&price=1" + "&limit=20";
 
   console.log("url: " + queryURL);
 
