@@ -151,8 +151,8 @@ row.myclass{
 
 /*for details recipe page*/
 .detailsclass{
-    background-color: rgb(131, 121, 121);
-    opacity: 0.75;
+    background-color: rgb(172, 166, 166);
+   
     width:75%;
     padding: 20px;
     margin: auto;
@@ -181,4 +181,13 @@ img.detailsclass{
     background-repeat: no-repeat;
     font-style: italic;
     font-family: 'Pacifico', cursive;
+}
+
+@media only screen and (max-device-width: 870px) {
+
+    img.detailimg{
+       
+        height: auto;
+        width: 250px;
+    }
 }
