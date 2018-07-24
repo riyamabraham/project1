@@ -1,6 +1,6 @@
 # project1
 
-https://github.com/riyamabraham/project1
+ https://riyamabraham.github.io/project1/
 
 
 
