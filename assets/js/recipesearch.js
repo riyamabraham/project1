@@ -26,9 +26,9 @@ $(document).ready(function(){
             var left = $("<td id='left'>");
             var right = $("<td id='right'>");
 
-            var p1 = $("<h2>").html('<strong>' +name+ '</strong>' );
+            var p1 = $("<h2>").html('<strong>' +name+ '</strong>' ).css({color:"white"});
             
-            var p5 = $("<tr class='imagetd'>").html('<img src="'+url+'" width="500" height="450">');
+            var p5 = $("<h2 class='imagetd'>").html('<img src="'+url+'" width="600" height="450">');
 
             var ingredients = $("<div>");
 
@@ -44,13 +44,14 @@ $(document).ready(function(){
             
             var courseclass = $("<h5>").text("Course : "+response.attributes.course[0]);
              var source = $("<h5>").text("Source : "+response.source.sourceDisplayName+" / "); 
-             var sourceurl = $("<a href ="+response.source.sourceRecipeUrl+"></a>").text("Visit"); 
+             var sourceurl = $("<a href ="+response.source.sourceRecipeUrl+"></a>").text("Visit").css({color:"violet"}); 
 
 console.log(response.attribution.url);
-             var yummlyurl = $("<a href =" +response.attribution.url+ "></a>").html("<h5>SEE FULL RECIPE</h5>");
+             var yummlyurl = $("<a href =" +response.attribution.url+ "></a>").html("<h5>SEE FULL RECIPE</h5>").css({color:"violet"});
 
             source.append(sourceurl);
-            left.append(ingredients);
+            var heading =$("<h4>").text("Ingredients").css({color:"green"});
+            left.append(heading,ingredients);
             right.append(source,p2,courseclass,p3);
             resrow.append(p1,p5,left,right,yummlyurl);
 

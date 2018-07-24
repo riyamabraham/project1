@@ -12,6 +12,8 @@ $("#recipesubmit").on("click",function(e){
     console.log(choice);
     console.log(diet,allergy);
 
+    console.log(allergy);
+    console.log(allergy.length);
     
     if(choice == null){
        
@@ -21,7 +23,19 @@ $("#recipesubmit").on("click",function(e){
           });
     }
     else{
+        
+        if(diet != null){
+            choice = choice+"&allowedDiet[]="+diet;
+            console.log(choice);
+        }
+        if(allergy!=null){
+            for(var i=0;i<allergy.length;i++){
 
+                choice+= "&allowedAllergy[]="+allergy[i];
+            }
+            console.log(choice);
+        }
+        
         var queryUrl = "http://api.yummly.com/v1/api/recipes?_app_id=fdcfc01e&_app_key=83ef5d0b3506805bd21bcb62ae101402&q="+choice+ "&maxResult=12&start=12";
     
         $.ajax({

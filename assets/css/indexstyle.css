@@ -55,15 +55,7 @@ footer{
     width: 100%;
 }
 
-#recipesearch{
-    background-image: url("../images/bg.jpg");
-    top:750px;
-    height: 1200px;
-    width: 100%;
-    background-size: cover;                    
-    background-position: center center;
-    background-repeat: no-repeat;
-}
+
 
 #restaurentsearch{
     background-image: url("../images/rest.jpg");
@@ -157,10 +149,10 @@ row.myclass{
 }
 
 
-
+/*for details recipe page*/
 .detailsclass{
     background-color: rgb(131, 121, 121);
-   
+    opacity: 0.75;
     width:75%;
     padding: 20px;
     margin: auto;
@@ -175,4 +167,18 @@ img.detailsclass{
     margin-left: auto;
     margin-right: auto;
    width: 50%;
+  
+}
+
+
+#recipesearch{
+    background-image: url("../images/bg.jpg");
+    top:750px;
+    height: auto;
+    width: 100%;
+    background-size: cover;                    
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
 }
